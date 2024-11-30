@@ -22,4 +22,5 @@ spec:
       containers:
       - name: hello-app
         image: central-quay-registry.apps.ocp4.example.com/cloudadmin/hello-app:v11
-      imagePullSecrets: cloudadmin-pullrobot-pull-secret
+      imagePullSecrets: 
+      - name: cloudadmin-pullrobot-pull-secret
